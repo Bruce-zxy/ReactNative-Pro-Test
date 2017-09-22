@@ -19,9 +19,11 @@ export default class RNtest extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
+        <Text>
+          There are more interesting thing will happen!
+        </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js
-          但是我并没有什么卵用呢！....
         </Text>
         <Text style={styles.instructions}>
           Double tap R on your keyboard to reload,{'\n'}
