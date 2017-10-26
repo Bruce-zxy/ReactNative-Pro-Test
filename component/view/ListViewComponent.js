@@ -8,6 +8,7 @@ class ListViewComponent extends Component {
 	        dataSource: new ListView.DataSource({  
 	            rowHasChanged: (r1, r2) => r1 !== r2,  
 	        }),
+	        datas: [{content: '请求中。。。'}],
 		}
 	}
 	_fetchListData(url) {
@@ -17,9 +18,8 @@ class ListViewComponent extends Component {
 		.then((responseJson) => {
 			var datas = responseJson.result.map((item)=> { return {content: item.content}});
 			self.setState({
-		   		dataSource: self.state.dataSource.cloneWithRows(datas),  
+		   		datas: datas,  
 			});
-			console.log(self.state.dataSource);
 		});
 	}    
 	renderRow(rowData, sectionID, rowID) {
@@ -41,7 +41,7 @@ class ListViewComponent extends Component {
         return (
 	      	<View style={styles.container}>
 	      		<StatusBar backgroundColor={'transparent'} />
-		        <ListView dataSource={this.state.dataSource} renderRow={this.renderRow} />
+		        <ListView dataSource={this.state.dataSource.cloneWithRows(this.state.datas)} renderRow={this.renderRow} />
 	      	</View>
         );
     }
