@@ -1,0 +1,54 @@
+[33mcommit c37258d662ecbd90a16da817dfa7d9f2a993d14c[m
+Author: bruce-zxy <bruce_zxy@163.com>
+Date:   Fri Oct 27 00:34:18 2017 +0800
+
+    remote server
+
+[33mcommit 25ad3bb0b7326962549341a4148096033b605382[m
+Author: bruce-zxy <bruce_zxy@163.com>
+Date:   Fri Oct 27 00:19:17 2017 +0800
+
+    test
+
+[33mcommit 2d96577802209ee3f8d52852f18b26a315167bb2[m
+Author: bruce-zxy <bruce_zxy@163.com>
+Date:   Sun Sep 24 21:59:51 2017 +0800
+
+    new
+
+[33mcommit e5c25e6af9753ba4f4fb4bd0befc6319fb149cbf[m
+Author: bruce-zxy <bruce_zxy@163.com>
+Date:   Sat Sep 23 02:05:45 2017 +0800
+
+    test2
+
+[33mcommit ce4a10903a308c3331d1d1c4ee013ac74763c227[m
+Author: bruce-zxy <bruce_zxy@163.com>
+Date:   Thu Sep 21 19:22:17 2017 +0800
+
+    add README.md
+
+[33mcommit 56422d03652ca7d8a6b7c08f4ef419c5713f392d[m
+Merge: 4c8be0c 23abbbf
+Author: bruce-zxy <bruce_zxy@163.com>
+Date:   Thu Sep 21 19:17:47 2017 +0800
+
+    Merge branch 'master' of github.com:Bruce-zxy/ReactNative-Pro-Test
+
+[33mcommit 23abbbf0ef400d7af8c81f3f615f0aec9d00e47c[m
+Author: HadesZ <bruce_zxy@163.com>
+Date:   Thu Sep 21 19:14:36 2017 +0800
+
+    Delete README.md
+
+[33mcommit 4c8be0ca05b708fc8cb726b678b0e0bab3e4fb27[m
+Author: bruce-zxy <bruce_zxy@163.com>
+Date:   Thu Sep 21 18:57:49 2017 +0800
+
+    first commit
+
+[33mcommit a649024e06378cdddaa8e7289dfd9ea985adb405[m
+Author: HadesZ <bruce_zxy@163.com>
+Date:   Thu Sep 21 18:50:48 2017 +0800
+
+    Initial commit

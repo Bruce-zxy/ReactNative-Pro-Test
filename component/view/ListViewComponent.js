@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { AppRegistry, ListView, FlatList, StyleSheet, Text, View, StatusBar } from 'react-native';
+import { ListView, StyleSheet, Text, View, TouchableNativeFeedback } from 'react-native';
 
 class ListViewComponent extends Component {
+	static navigationOptions = {
+        title: '列表页',
+    }
 	constructor(props) {
 		super(props);
 		this.state = {  
@@ -23,10 +26,16 @@ class ListViewComponent extends Component {
 		});
 	}    
 	renderRow(rowData, sectionID, rowID) {
+		const { navigate } = this.props.navigation;
 		return (
-			<View style={styles.item}>  
-            	<Text>第{++rowID}篇</Text>  
-              	<Text>{rowData.content}</Text>  
+			<View style={styles.item} >
+            	<Text>第{++rowID}篇</Text>
+            	<TouchableNativeFeedback background={TouchableNativeFeedback.Ripple('#e1e1e1')}>
+	            	<View style={{height: 40, backgroundColor: '#ccc'}}>
+	              		<Text>{rowData.content.slice(0,20)}...</Text>  
+	              		<Text style={{color: '#666', textAlign: 'right'}} onPress={() => navigate('Details', {content: rowData.content})}>查看更多</Text>
+	            	</View>
+            	</TouchableNativeFeedback>
             </View>
         )
     }
@@ -39,9 +48,8 @@ class ListViewComponent extends Component {
 	}
     render() {
         return (
-	      	<View style={styles.container}>
-	      		<StatusBar backgroundColor={'transparent'} />
-		        <ListView dataSource={this.state.dataSource.cloneWithRows(this.state.datas)} renderRow={this.renderRow} />
+	      	<View style={styles.container} >
+		        <ListView dataSource={this.state.dataSource.cloneWithRows(this.state.datas)} renderRow={this.renderRow.bind(this)} />
 	      	</View>
         );
     }

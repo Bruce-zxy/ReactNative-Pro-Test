@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, ScrollView, Image, View } from 'react-native';
 
-import ListViewComponent from './component/view/ListViewComponent';
+import App from './component/App';
 
 class RNtest extends Component {
 	render() {
 		return (
-			<ListViewComponent />
+			<App />
 		);
 	}
 }
